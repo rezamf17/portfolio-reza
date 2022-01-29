@@ -1,0 +1,38 @@
+[
+    {
+        "id ": 1, 
+        "judul" : "Sistem Informasi Monitoring Di PT.Biofarma",
+        "img" : "LoginBiofarma.jpg",
+        "url" : "ecommando"
+    },
+    {   "id" : 2, 
+        "judul" : "Sistem Informasi Absensi Di SMK Cellular Hauro 49 Rancaekek",
+        "img" : "2.jpg",
+        "url" : "absensi"
+    },
+    {   "id" : 4, 
+        "judul" : "Sistem Informasi Inventory Barang (Latihan)",
+        "img" : "logingudang.jpg",
+        "url" : "gudang"
+    },
+    {   "id" : 5, 
+        "judul" : "Sistem Informasi PPDB Di SMK Cellular Hauro 49 Rancaekek",
+        "img" : "home.jpg",
+        "url" : "ppdb"
+    },
+    {   "id" : 6, 
+        "judul" : "Sistem Informasi Pengelolaan Laporan DSW Di PT. Telkom",
+        "img" : "logindsw.jpg",
+        "url" : "dsw"
+    },
+    {   "id" : 7, 
+        "judul" : "Sistem Informasi Pendaftaran Pelatihan Di BLKM",
+        "img" : "web utama.jpg",
+        "url" : "blkm"
+    },
+    {   "id" : 8, 
+        "judul" : "Sistem Informasi Pembukaan Rekening Di BPRS Al-Masoem",
+        "img" : "form1.jpg",
+        "url" : "bprs"
+    }
+]
