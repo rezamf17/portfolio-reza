@@ -38,7 +38,8 @@ export default {
   name: 'App',
 
   data: () => ({
-      ec : 'ecommando'
+      ec : 'ecommando',
+      
   }),
   components: {
     // Home,

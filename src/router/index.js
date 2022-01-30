@@ -9,6 +9,7 @@ import DSW from '../components/DSW.vue'
 import PPDB from '../components/PPDB.vue'
 import BLKM from '../components/BLKM.vue'
 import BPRS from '../components/BPRS.vue'
+// import CV from '../assets/siswa.pdf'
 
 Vue.use(VueRouter)
 
@@ -58,6 +59,11 @@ const routes = [
     name: 'Projects',
     component: Projects
   },
+  // {
+  //   path: '/cv',
+  //   name: 'CV',
+  //   component: CV
+  // },
   {
     path: '/about',
     name: 'About',

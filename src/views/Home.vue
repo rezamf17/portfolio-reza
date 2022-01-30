@@ -10,9 +10,12 @@
       <v-btn text href="https://github.com/rezamf17">
         <v-icon>mdi-github</v-icon>
       </v-btn>
+      <v-btn text href="https://www.linkedin.com/in/reza-muhamad-fauzi-01049a214/">
+        <v-icon>mdi-linkedin</v-icon>
+      </v-btn>
     </v-card-text>
     <v-card-actions class="pb-15 pl-10">
-      <v-btn color="green darken-4" class="white--text">DOWNLOAD CV</v-btn>
+      <v-btn color="green darken-4" class="white--text" :href="`${publicPath}siswa.pdf`" download="download" >DOWNLOAD CV</v-btn>
     </v-card-actions>
   </v-card>
 </v-container>
@@ -22,6 +25,10 @@
 
   export default {
     name: 'App',
-
+    data(){
+      return {
+        publicPath: process.env.BASE_URL
+      }
+    }
   }
 </script>
