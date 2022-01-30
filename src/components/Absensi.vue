@@ -12,7 +12,27 @@
                         </router-link>
                 </VCardTitle>
                 <VCardText>
-                    <p>Sistem Absensi ini merupakan sistem</p>   
+                    <p>Sistem Informasi Absensi Di SMK Cellular Hauro'49 Rancaekek 
+                        sistem yang saya buat bersama teman saya saat magang yang 
+                        dibuat pada bulan September hingga Oktober 2020. Sebagai 
+                        implementasi pengetahuan yang diperoleh selama melaksanakan 
+                        magang.</p>
+                    <VList dense class="rounded" color="green lighten-5">
+                            <VSubheader>Dibuat dengan </VSubheader>
+                            <v-list-item v-for="(item, i) in data" :key="i">
+                                <v-list-item-content>
+                                    <v-list-item-title v-text="item.create"></v-list-item-title>
+                                </v-list-item-content>
+                            </v-list-item>
+                        </VList>
+                        <VList dense class="rounded mt-3" color="green lighten-5">
+                            <VSubheader>Fitur</VSubheader>
+                            <v-list-item v-for="(item, i) in fitur" :key="i">
+                                <v-list-item-content>
+                                    <v-list-item-title v-text="item.text"></v-list-item-title>
+                                </v-list-item-content>
+                            </v-list-item>
+                        </VList>
                 </VCardText>
             </VCard>
             <v-carousel>
@@ -40,6 +60,18 @@
                     {image : 'kelolaakunadmin.jpg'},
                     {image : 'rekapabsensiguru.jpg'},
                     {image : 'rekapabsensiswa.jpg'},
+                ],
+                data : [
+                    {create : 'PHP'},
+                    {create : 'Codeigniter 3'},
+                    {create : 'MySQL'},
+                ],
+                fitur : [
+                    {text : 'Login'},
+                    {text : 'Add, Edit, Delete akun'},
+                    {text : 'Absen Siswa'},
+                    {text : 'Konfirmasi Absen Siswa Guru'},
+                    {text : 'Cetak Data Rekap Absen'},
                 ]
             }
         }

@@ -12,7 +12,27 @@
                         </router-link>
                 </VCardTitle>
                 <VCardText>
-                    <p>Sistem Absensi ini merupakan sistem</p>   
+                    <p>Sistem Informasi Pendaftaran Pelatihan Balai Kerja Mandiri 
+                        merupakan sebuah sistem yang digunakan untuk pendaftaran 
+                        online pelatihan kerja dan juga pengelolaan data peserta pelatihan. 
+                        Sistem ini dibuat pada bulan November 2021 hingga Desember 2021.
+                    </p>
+                    <VList dense class="rounded" color="green lighten-5">
+                            <VSubheader>Dibuat dengan </VSubheader>
+                            <v-list-item v-for="(item, i) in data" :key="i">
+                                <v-list-item-content>
+                                    <v-list-item-title v-text="item.create"></v-list-item-title>
+                                </v-list-item-content>
+                            </v-list-item>
+                        </VList>
+                        <VList dense class="rounded mt-3" color="green lighten-5">
+                            <VSubheader>Fitur</VSubheader>
+                            <v-list-item v-for="(item, i) in fitur" :key="i">
+                                <v-list-item-content>
+                                    <v-list-item-title v-text="item.text"></v-list-item-title>
+                                </v-list-item-content>
+                            </v-list-item>
+                        </VList>   
                 </VCardText>
             </VCard>
             <v-carousel>
@@ -48,6 +68,21 @@
                     {image : 'seleksidata.jpg'},
                     {image : 'semuahasilsurvey.jpg'},
                     {image : 'survey.jpg'},
+                ],
+                data : [
+                    {create : 'PHP'},
+                    {create : 'Laravel 8'},
+                    {create : 'MySQL'},
+                ],
+                fitur : [
+                    {text : 'Login'},
+                    {text : 'Register'},
+                    {text : 'Add, Edit, Delete akun'},
+                    {text : 'Add, Edit, Delete Pengumuman'},
+                    {text : 'Seleksi dan Print data laporan'},
+                    {text : 'Survey dan lihat hasil survey'},
+                    {text : '14 data laporan'},
+                    {text : 'Isi dan Edit Formulir'},
                 ]
             }
         }

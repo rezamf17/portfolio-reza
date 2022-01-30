@@ -12,7 +12,26 @@
                         </router-link>
                 </VCardTitle>
                 <VCardText>
-                    <p>Sistem Absensi ini merupakan sistem</p>   
+                    <p>Sistem Informasi Pengelolaan Laporan DSW (Digital Service dan Wifi). 
+                        Sistem ini dibuat untuk pengelolaan laporan dan target dari 
+                        kantor cabang PT. Telkom. Sistem ini dibuat pada bulan 
+                        september 2021 hingga oktober 2021.</p>
+                        <VList dense class="rounded" color="green lighten-5">
+                            <VSubheader>Dibuat dengan </VSubheader>
+                            <v-list-item v-for="(item, i) in data" :key="i">
+                                <v-list-item-content>
+                                    <v-list-item-title v-text="item.create"></v-list-item-title>
+                                </v-list-item-content>
+                            </v-list-item>
+                        </VList>
+                        <VList dense class="rounded mt-3" color="green lighten-5">
+                            <VSubheader>Fitur</VSubheader>
+                            <v-list-item v-for="(item, i) in fitur" :key="i">
+                                <v-list-item-content>
+                                    <v-list-item-title v-text="item.text"></v-list-item-title>
+                                </v-list-item-content>
+                            </v-list-item>
+                        </VList>   
                 </VCardText>
             </VCard>
             <v-carousel>
@@ -47,6 +66,22 @@
                     {image : 'lihatprodukstaff.jpg'},
                     {image : 'viewreportlaporanstaff.jpg'},
                     {image : 'viewreportstaff.jpg'},
+                ],
+                data : [
+                    {create : 'PHP'},
+                    {create : 'Laravel 8'},
+                    {create : 'MySQL'},
+                ],
+                fitur : [
+                    {text : 'Login'},
+                    {text : 'Add, Edit, Delete akun'},
+                    {text : 'Add, Edit, Delete Target'},
+                    {text : 'Add, Edit, Delete Produk'},
+                    {text : 'Add, Edit, Delete Nama Produk'},
+                    {text : 'Print Excel Target'},
+                    {text : 'Print Excel Produk'},
+                    {text : 'Perankingan Otomaris'},
+                    {text : 'Perhitungan Persen Otomatis'},
                 ]
             }
         }

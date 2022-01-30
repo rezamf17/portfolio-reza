@@ -12,7 +12,27 @@
                         </router-link>
                 </VCardTitle>
                 <VCardText>
-                    <p>Sistem Informasi Gudang ini merupakan sistem</p>   
+                    <p>Sistem Informasi Gudang merupakan implementasi 
+                        studi kasus saya dalam mempelajari framework laravel. 
+                        Sistem ini digunakan untuk pengelolaan data barang 
+                        yang masuk dan keluar pada suatu gudang. Sistem ini 
+                        dibuat pada bulan Oktober 2020 hingga November 2020.</p> 
+                        <VList dense class="rounded" color="green lighten-5">
+                            <VSubheader>Dibuat dengan </VSubheader>
+                            <v-list-item v-for="(item, i) in data" :key="i">
+                                <v-list-item-content>
+                                    <v-list-item-title v-text="item.create"></v-list-item-title>
+                                </v-list-item-content>
+                            </v-list-item>
+                        </VList>
+                        <VList dense class="rounded mt-3" color="green lighten-5">
+                            <VSubheader>Fitur</VSubheader>
+                            <v-list-item v-for="(item, i) in fitur" :key="i">
+                                <v-list-item-content>
+                                    <v-list-item-title v-text="item.text"></v-list-item-title>
+                                </v-list-item-content>
+                            </v-list-item>
+                        </VList>  
                 </VCardText>
             </VCard>
             <v-carousel>
@@ -36,6 +56,17 @@
                     {image : 'databarangkeluar.jpg'},
                     {image : 'databarangmasuk.jpg'},
                     {image : 'databarang.jpg'},
+                ],
+                data : [
+                    {create : 'PHP'},
+                    {create : 'Laravel 7'},
+                    {create : 'MySQL'},
+                ],
+                fitur : [
+                    {text : 'Login'},
+                    {text : 'Add, Edit, Delete Nama Barang'},
+                    {text : 'Add, Edit, Delete Barang Masuk'},
+                    {text : 'Add, Edit, Delete Barang Keluar'},
                 ]
             }
         }
