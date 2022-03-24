@@ -34,5 +34,10 @@
         "judul" : "Sistem Informasi Pembukaan Rekening Di BPRS Al-Masoem",
         "img" : "form1.jpg",
         "url" : "bprs"
+    },
+    {   "id" : 9, 
+        "judul" : "Sistem Informasi Resto Lumen (Latihan Demo)",
+        "img" : "homeRestoLumen.jpg",
+        "url" : "resto-lumen"
     }
 ]

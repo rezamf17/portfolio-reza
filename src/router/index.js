@@ -9,6 +9,7 @@ import DSW from '../components/DSW.vue'
 import PPDB from '../components/PPDB.vue'
 import BLKM from '../components/BLKM.vue'
 import BPRS from '../components/BPRS.vue'
+import RestoLumen from '../components/RestoLumen.vue'
 // import CV from '../assets/siswa.pdf'
 
 Vue.use(VueRouter)
@@ -58,6 +59,11 @@ const routes = [
     path: '/projects',
     name: 'Projects',
     component: Projects
+  },
+  {
+    path: '/resto-lumen',
+    name: 'RestoLumen',
+    component: RestoLumen
   },
   // {
   //   path: '/cv',
