@@ -15,7 +15,7 @@
       </v-btn>
     </v-card-text>
     <v-card-actions class="pb-15 pl-10">
-      <v-btn color="green darken-4" class="white--text" :href="`${publicPath}siswa.pdf`" download="download" >DOWNLOAD CV</v-btn>
+      <v-btn color="green darken-4" class="white--text" :href="`${publicPath}CVREZA02.pdf`" download="CV REZA" >DOWNLOAD CV</v-btn>
     </v-card-actions>
   </v-card>
 </v-container>
